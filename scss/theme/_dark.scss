@@ -1,0 +1,22 @@
+html.dark {
+    --primary-font-color: #fff;
+    --icon-color: brightness(0) saturate(100%) invert(100%) sepia(28%)
+        saturate(2%) hue-rotate(234deg) brightness(111%) contrast(100%);
+
+    --body-bg-color: #292e39;
+    --header-bg-color: #171c28;
+    --header-shadow: rgba(0, 0, 0, 0.20);
+    --nav-bg-color: #fff;
+    --nav-shadow: rgba(23, 28, 40, 0.40);    
+    --top-action-group-bg-color: #292E39;
+    --top-action-group-shadow: rgba(0, 0, 0, 0.08);
+    --top-action-group-separator: #ededf6;
+
+    // Dropdown
+    --dropdown-bg-color: #313744;
+    --dropdown-shadow: rgba(23, 28, 40, 0.40);
+    --dropdown-arrow-color: brightness(0) saturate(100%) invert(21%) sepia(4%) saturate(2957%) hue-rotate(183deg) brightness(90%) contrast(93%);
+    --top-menu-main-border-color: #171C28;
+    --menu-column-icon-color: brightness(0) saturate(100%) invert(90%) sepia(8%) saturate(772%) hue-rotate(203deg) brightness(109%) contrast(95%);
+
+}
