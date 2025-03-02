@@ -18,7 +18,28 @@ html {
     --dropdown-shadow: rgba(200, 200, 200, 0.40);
     --top-menu-main-border-color: #D2D1D6;
 
-    @include abstracts.breakpoint('lg') {
+    // Browse Category
+    --cate-item-bg-color: #eee;
+    --cate-item-thumb-bg-color: #fff;
+    --cate-item-heading-color: #000;
+
+    // Filter btn
+    --filter-btn-bg-color: #fff;
+    --filter-btn-font-color: #6c6c72;
+
+    // Product item
+    --product-item-bg-color: #fff;
+    --product-item-shadow: rgba(237, 237, 246, 0.20)
+
+    // Like btn
+    --like-btn-bg-color: #fff;
+    --like-btn-shadow: rgba(124, 124, 124, 0.20);
+
+    @include abstracts.screen('lg') {
         --header-bg-color: #FFF;
+    }
+
+    @include abstracts.screen('md') {
+        --cate-item-bg-color: #FFF;
     }
 }

@@ -16,6 +16,27 @@
         <button class="nav__close js-toggle" toggle-target="#navbar">
           <img src="./assets/icons/close-arrow.svg" alt="">
         </button>
+
+        <a href="#!" class="nav-btn d-none d-md-flex">
+          <img
+            src="./assets/icons/buy.svg"
+            alt=""
+            class="nav-btn__icon"
+          />
+          <span class="nav-btn__title">Cart</span>
+          <span class="nav-btn__qnt">3</span>
+        </a>
+
+        <a href="#!" class="nav-btn d-none d-md-flex">
+          <img
+            src="./assets/icons/heart.svg"
+            alt=""
+            class="nav-btn__icon"
+          />
+          <span class="nav-btn__title">Favorite</span>
+          <span class="nav-btn__qnt">5</span>
+        </a>
+
         <ul class="nav__list js-dropdown-list">
           <li class="nav__item">
             <a href="#!" class="nav__link">
@@ -27,13 +48,13 @@
               />
             </a>
 
-            <div class="dropdown">
+            <div class="dropdown js-dropdown">
               <div class="dropdown__inner">
                 <div class="top-menu">
                   <div class="top-menu__main">
                     <!-- Menu column -->
                     <div class="menu-column">
-                      <div class="menu-column__icon">
+                      <div class="menu-column__icon d-lg-none">
                         <img
                           src="./assets/img/category/cate1.1.svg"
                           alt=""
@@ -47,12 +68,305 @@
                       </div>
 
                       <div class="menu-column__content">
-                        <h2 class="menu-column__heading">All Departments</h2>
-                        <ul class="menu-column__list">
+                        <h2 class="menu-column__heading d-lg-none">All Departments</h2>
+                        <ul class="menu-column__list js-menu-list">
                           <li class="menu-column__item">
                             <a href="#!" class="menu-column__link"
                               >Savings & Featured Shops</a
                             >
+                            <div class="sub-menu">
+                              <div class="sub-menu__column">
+                                <div class="menu-column">
+                                  <div class="menu-column__icon">
+                                    <img
+                                      src="./assets/img/category/cate2.1.svg"
+                                      alt=""
+                                      class="menu-column__icon-1"
+                                    />
+                                    <img
+                                      src="./assets/img/category/cate2.2.svg"
+                                      alt=""
+                                      class="menu-column__icon-2"
+                                    />
+                                  </div>
+
+                                  <div class="menu-column__content">
+                                    <h2 class="menu-column__heading">
+                                      VVVVVVVVVVVVVVVVVVV
+                                    </h2>
+                                    <ul class="menu-column__list">
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Shop all TVs</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >TVs by Size</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Smart TVs</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Roku TVs</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Streaming</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >TV Mounts & Accessories</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >DVD & Blu-Ray Players</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="menu-column">
+                                  <div class="menu-column__icon">
+                                    <img
+                                      src="./assets/img/category/cate3.1.svg"
+                                      alt=""
+                                      class="menu-column__icon-1"
+                                    />
+                                    <img
+                                      src="./assets/img/category/cate2.2.svg"
+                                      alt=""
+                                      class="menu-column__icon-2"
+                                    />
+                                  </div>
+
+                                  <div class="menu-column__content">
+                                    <h2 class="menu-column__heading">
+                                      Wearable Technology
+                                    </h2>
+                                    <ul class="menu-column__list">
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Galaxy Watch</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Apple Watch</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Fitness Trackers</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Virtual Reality</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Headphones</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="sub-menu__column">
+                                <div class="menu-column">
+                                  <div class="menu-column__icon">
+                                    <img
+                                      src="./assets/img/category/cate2.1.svg"
+                                      alt=""
+                                      class="menu-column__icon-1"
+                                    />
+                                    <img
+                                      src="./assets/img/category/cate2.2.svg"
+                                      alt=""
+                                      class="menu-column__icon-2"
+                                    />
+                                  </div>
+
+                                  <div class="menu-column__content">
+                                    <h2 class="menu-column__heading">
+                                      TV & Video
+                                    </h2>
+                                    <ul class="menu-column__list">
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Shop all TVs</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >TVs by Size</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Smart TVs</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Roku TVs</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Streaming</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Streaming</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Streaming</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Streaming</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Streaming</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Streaming</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >TV Mounts & Accessories</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >DVD & Blu-Ray Players</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="sub-menu__column">
+                                <div class="menu-column">
+                                  <div class="menu-column__icon">
+                                    <img
+                                      src="./assets/img/category/cate2.1.svg"
+                                      alt=""
+                                      class="menu-column__icon-1"
+                                    />
+                                    <img
+                                      src="./assets/img/category/cate2.2.svg"
+                                      alt=""
+                                      class="menu-column__icon-2"
+                                    />
+                                  </div>
+
+                                  <div class="menu-column__content">
+                                    <h2 class="menu-column__heading">
+                                      TV & Video
+                                    </h2>
+                                    <ul class="menu-column__list">
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Shop all TVs</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >TVs by Size</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Smart TVs</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="menu-column">
+                                  <div class="menu-column__icon">
+                                    <img
+                                      src="./assets/img/category/cate3.1.svg"
+                                      alt=""
+                                      class="menu-column__icon-1"
+                                    />
+                                    <img
+                                      src="./assets/img/category/cate2.2.svg"
+                                      alt=""
+                                      class="menu-column__icon-2"
+                                    />
+                                  </div>
+
+                                  <div class="menu-column__content">
+                                    <h2 class="menu-column__heading">
+                                      Wearable Technology
+                                    </h2>
+                                    <ul class="menu-column__list">
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Galaxy Watch</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Apple Watch</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Fitness Trackers</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Virtual Reality</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Headphones</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Headphones</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Headphones</a
+                                        >
+                                      </li>
+                                      <li class="menu-column__item">
+                                        <a href="#!" class="menu-column__link"
+                                          >Headphones</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </li>
                           <li class="menu-column__item">
                             <a href="#!" class="menu-column__link"

@@ -6,12 +6,12 @@ $grid-breakpoints: (
     xxl: 1400px,
 );
 
-@mixin breakpoint($key) {
+@mixin screen($key) {
     @if map-has-key($grid-breakpoints, $key) {
         @media (max-width: (map-get($grid-breakpoints, $key) - 0.02)) {
             @content;
         }
     } @else {
-        @warn "Unknown breakpoint: #{$breakpoint}.";
+        @warn "Unknown breakpoint: #{$key}.";
     }
 }

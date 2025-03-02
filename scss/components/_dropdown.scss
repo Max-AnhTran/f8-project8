@@ -1,13 +1,21 @@
 @use "../abstracts";
 
 .dropdown {
+  display: none;
   opacity: 0;
   visibility: hidden;
   position: absolute;
   left: 0;
   padding-top: 54px;
-  transition: 0.2s;
+  transition: .2s;
   width: min(100%, 1240px);
+  height: 0;
+
+  @include abstracts.screen("lg") {
+    position: initial;
+    padding-top: 0;
+    overflow: hidden;
+  }
 
   &__inner {
     --inner-max-height: min(582px, 100vh - 158px);
@@ -20,6 +28,11 @@
     background: var(--dropdown-bg-color);
     box-shadow: 0px 40px 90px 20px var(--dropdown-shadow);
 
+    @include abstracts.screen("lg") {
+      padding: 0;
+      height: auto;
+    }
+
     &::before {
       content: url("../icons/dropdown-arrow.svg");
       position: absolute;
@@ -27,6 +40,16 @@
       left: var(--arrow-left-pos);
       translate: -50%;
       filter: var(--dropdown-arrow-color);
+    }
+
+    @include abstracts.screen("lg") {
+      background: none;
+      border-radius: 0;
+      box-shadow: none;
+
+      &::before {
+        content: none;
+      }
     }
   }
 }
@@ -40,6 +63,15 @@
     height: calc(var(--inner-max-height) - var(--inner-padding) * 2);
     border-right: 1px solid var(--top-menu-main-border-color);
     overflow-y: auto;
+
+    @include abstracts.screen("lg") {
+      border-right: none;
+      width: 100%;
+      height: auto;
+      // display: grid;
+      // grid-template-columns: repeat(4, 1fr);
+      // gap: var(--inner-padding);
+    }
   }
 }
 
@@ -53,8 +85,12 @@
     height: 36px;
     flex-shrink: 0;
 
-    @include abstracts.breakpoint("xl") {
+    @include abstracts.screen("xl") {
       display: none;
+    }
+
+    @include abstracts.screen("lg") {
+      display: block;
     }
   }
 
@@ -90,11 +126,18 @@
   &__list {
     margin-top: 20px;
   }
+  
+  .sub-menu {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+  }
 
   &__item {
-    &:hover .sub-menu {
+    &--active .sub-menu {
       opacity: 1;
       visibility: visible;
+      height: auto;
     }
 
     &:hover > .menu-column__link {
@@ -110,17 +153,12 @@
     line-height: 2rem; /* 142.857% */
   }
 
-  &__item:first-child &__link {
+  &__item:first-child > &__link {
     padding-top: 0;
   }
 
-  &__item:last-child &__link {
+  &__item:last-child > &__link {
     padding-bottom: 0;
-  }
-
-  .sub-menu {
-    opacity: 0;
-    visibility: hidden;
   }
 }
 
@@ -134,10 +172,24 @@
   overflow-y: auto;
   transition: 0.1s;
 
+  @include abstracts.screen("lg") {
+    position: initial;
+    inset: initial;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-left: 0;
+  }
+
   &__column {
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    @include abstracts.screen("lg") {
+      &:last-child{
+        margin-bottom: 10px;
+      }
+    }
   }
 
   &--not-main {
@@ -147,5 +199,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: calc(var(--inner-max-height) - var(--inner-padding) * 2);
+
+    @include abstracts.screen("lg") {
+      grid-template-columns: 1fr;
+      height: auto;
+      // jsejkdahaksljdhasdhk
+    }
   }
 }

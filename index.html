@@ -1,52 +1,369 @@
 <!DOCTYPE html>
-<html lang="en">
-    <!-- class="dark -->
+<html lang="en" class="darkk">
+    <!-- class="dark" -->
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>F8 Project 08</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>F8 Project 08</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="./assets/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="./assets/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
 
-    <!-- Embed fonts -->
-    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+        <!-- Embed fonts -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
 
-    <!-- Styles CSS -->
-    <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- Styles CSS -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
 
-    <!-- Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
 
-    <!-- Scripts -->
-    <script src="./assets/js/scripts.js"></script>
-</head>
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
 
-<body>
+    <body>
         <header id="header" class="header"></header>
         <script>
             load("#header", "./templates/header.html");
         </script>
-    <div class="container">
-    
-    
-    
-        <footer id="footer"></footer>
+        <div class="container home">
+            <!-- Slideshow -->
+            <div class="home__container">
+                <div class="slideshow">
+                    <div class="slideshow__inner">
+                        <a href="#!" class="slideshow__item">
+                            <picture>
+                                <source
+                                    media="(max-width: 767.98px)"
+                                    srcset="
+                                        ./assets/img/slideshow/slide1-md.png
+                                    "
+                                />
+                                <img
+                                    src="./assets/img/slideshow/slide1.png"
+                                    alt=""
+                                    class="slideshow__img"
+                                />
+                            </picture>
+                        </a>
+                    </div>
+
+                    <div class="slideshow__pages">
+                        <span class="slideshow__num">1</span>
+                        <span class="slideshow__slider"></span>
+                        <span class="slideshow__num">5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Browse Categories -->
+            <section class="home__container">
+                <div class="home__row">
+                    <h2 class="home__heading">Browse Categories</h2>
+                </div>
+                <div class="home__cate row row-cols-3 row-cols-md-1">
+                    <div class="col">
+                        <a href="#!">
+                            <article class="cate-item">
+                                <img
+                                    src="./assets/img/category-browse/cate1.png"
+                                    alt=""
+                                    class="cate-item__thumb"
+                                />
+                                <div class="cate-item__info">
+                                    <h3 class="cate-item__title">$24 - $150</h3>
+                                    <p class="cate-item__desc">
+                                        New sumatra mandeling coffe blend
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#!">
+                            <article class="cate-item">
+                                <img
+                                    src="./assets/img/category-browse/cate2.png"
+                                    alt=""
+                                    class="cate-item__thumb"
+                                />
+                                <div class="cate-item__info">
+                                    <h3 class="cate-item__title">$37 - $160</h3>
+                                    <p class="cate-item__desc">
+                                        Espresso arabica and robusta beans
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#!">
+                            <article class="cate-item">
+                                <img
+                                    src="./assets/img/category-browse/cate3.png"
+                                    alt=""
+                                    class="cate-item__thumb"
+                                />
+                                <div class="cate-item__info">
+                                    <h3 class="cate-item__title">$32 - $160</h3>
+                                    <p class="cate-item__desc">
+                                        Lavazza top class whole bean coffee
+                                        blend
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Browse Products -->
+            <section class="home__container">
+                <div class="home__row">
+                    <h2 class="home__heading">Total LavAzza 1320</h2>
+                    <button class="filter-btn">
+                        Filter
+                        <img
+                            src="./assets/icons/filter.svg"
+                            alt=""
+                            class="filter-btn__icon"
+                        />
+                    </button>
+                </div>
+                <div
+                    class="home__product row row-cols-4 row-cols-lg-2 row-cols-sm-1 g-3"
+                >
+                    <div class="col">
+                        <article class="product-item">
+                            <div class="product-item__img-wrapper">
+                                <a href="#!" class="product-item__link">
+                                    <img
+                                        src="./assets/img/product-browse/product1.png"
+                                        alt=""
+                                        class="product-item__thumb"
+                                    />
+                                </a>
+                                <button class="like-btn">
+                                    <img
+                                        src="./assets/icons/heart.svg"
+                                        alt=""
+                                        class="like-btn__icon icon"
+                                    />
+                                    <img
+                                        src="./assets/icons/heart-red.svg"
+                                        alt=""
+                                        class="like-btn__icon--liked"
+                                    />
+                                </button>
+                            </div>
+                            <div class="product-item__info">
+                                <h3 class="product-item__title">
+                                    <a href="#!"
+                                        >Coffee Beans - Espresso Arabica and
+                                        Robusta Beans</a
+                                    >
+                                </h3>
+                                <p class="product-item__brand">Lavazza</p>
+                                <div class="product-item__row">
+                                    <span class="product-item__price"
+                                        >$47.00</span
+                                    >
+                                    <div class="product-item__rate">
+                                        <img
+                                            src="./assets/icons/star.svg"
+                                            alt=""
+                                            class="product-item__star"
+                                        />
+                                        <span class="product-item__rate-score"
+                                            >4.3</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-item">
+                            <div class="product-item__img-wrapper">
+                                <a href="#!" class="product-item__link">
+                                    <img
+                                        src="./assets/img/product-browse/product2.png"
+                                        alt=""
+                                        class="product-item__thumb"
+                                    />
+                                </a>
+                                <button class="like-btn like-btn--liked">
+                                    <img
+                                        src="./assets/icons/heart.svg"
+                                        alt=""
+                                        class="like-btn__icon icon"
+                                    />
+                                    <img
+                                        src="./assets/icons/heart-red.svg"
+                                        alt=""
+                                        class="like-btn__icon--liked"
+                                    />
+                                </button>
+                            </div>
+                            <div class="product-item__info">
+                                <h3 class="product-item__title">
+                                    <a href="#!"
+                                        >Lavazza Coffee Blends - Try the Italian
+                                        Espresso</a
+                                    >
+                                </h3>
+                                <p class="product-item__brand">Lavazza</p>
+                                <div class="product-item__row">
+                                    <span class="product-item__price"
+                                        >$53.00</span
+                                    >
+                                    <div class="product-item__rate">
+                                        <img
+                                            src="./assets/icons/star.svg"
+                                            alt=""
+                                            class="product-item__star"
+                                        />
+                                        <span class="product-item__rate-score"
+                                            >3.4</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-item">
+                            <div class="product-item__img-wrapper">
+                                <a href="#!" class="product-item__link">
+                                    <img
+                                        src="./assets/img/product-browse/product3.png"
+                                        alt=""
+                                        class="product-item__thumb"
+                                    />
+                                </a>
+                                <button class="like-btn">
+                                    <img
+                                        src="./assets/icons/heart.svg"
+                                        alt=""
+                                        class="like-btn__icon icon"
+                                    />
+                                    <img
+                                        src="./assets/icons/heart-red.svg"
+                                        alt=""
+                                        class="like-btn__icon--liked"
+                                    />
+                                </button>
+                            </div>
+                            <div class="product-item__info">
+                                <h3 class="product-item__title">
+                                    <a href="#!"
+                                        >Lavazza - Caffè Espresso Black Tin -
+                                        Ground coffee</a
+                                    >
+                                </h3>
+                                <p class="product-item__brand">welikecoffee</p>
+                                <div class="product-item__row">
+                                    <span class="product-item__price"
+                                        >$99.99</span
+                                    >
+                                    <div class="product-item__rate">
+                                        <img
+                                            src="./assets/icons/star.svg"
+                                            alt=""
+                                            class="product-item__star"
+                                        />
+                                        <span class="product-item__rate-score"
+                                            >5.0</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-item">
+                            <div class="product-item__img-wrapper">
+                                <a href="#!" class="product-item__link">
+                                    <img
+                                        src="./assets/img/product-browse/product4.png"
+                                        alt=""
+                                        class="product-item__thumb"
+                                    />
+                                </a>
+                                <button class="like-btn">
+                                    <img
+                                        src="./assets/icons/heart.svg"
+                                        alt=""
+                                        class="like-btn__icon icon"
+                                    />
+                                    <img
+                                        src="./assets/icons/heart-red.svg"
+                                        alt=""
+                                        class="like-btn__icon--liked"
+                                    />
+                                </button>
+                            </div>
+                            <div class="product-item__info">
+                                <h3 class="product-item__title">
+                                    <a href="#!"
+                                        >Qualità Oro Mountain Grown - Espresso
+                                        Coffee Beans</a
+                                    >
+                                </h3>
+                                <p class="product-item__brand">Lavazza</p>
+                                <div class="product-item__row">
+                                    <span class="product-item__price"
+                                        >$38.65</span
+                                    >
+                                    <div class="product-item__rate">
+                                        <img
+                                            src="./assets/icons/star.svg"
+                                            alt=""
+                                            class="product-item__star"
+                                        />
+                                        <span class="product-item__rate-score"
+                                            >4.4</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="footer"></footer>
+
+            <script>
+                load("#footer", "./templates/footer.html");
+            </script>
+        </div>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
-            load("#footer", "./templates/footer.html");
-        </script>    
-    </div>
-
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
-
+            AOS.init();
+        </script>
+    </body>
 </html>

@@ -1,0 +1,67 @@
+@use "../abstracts";
+
+.cate-item {
+  height: 100%;
+  padding: 20px;
+  border-radius: 16px;
+  background: var(--cate-item-bg-color);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @include abstracts.screen("xl") {
+    flex-direction: column;
+  }
+  @include abstracts.screen("md") {
+    flex-direction: row;
+  }
+
+  &__thumb {
+    width: 116px;
+    height: 116px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: var(--cate-item-thumb-bg-color);
+
+    @include abstracts.screen("xl") {
+      width: 100%;
+    }
+
+    @include abstracts.screen("md") {
+      width: 88px;
+      height: 88px;
+    }
+  }
+
+  &__info {
+    padding-right: 20px;
+
+    @include abstracts.screen("xxl") {
+      padding-right: 0;
+    }
+  }
+
+  &__title {
+    color: var(--cate-item-heading-color);
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 3.2rem; /* 145.455% */
+
+    @include abstracts.screen("sm") {
+      font-size: 1.8rem;
+      line-height: 2.6rem; /* 155.556% */
+    }
+  }
+
+  &__desc {
+    margin-top: 6px;
+    color: var(--primary-font-color);
+    font-size: 1.6rem;
+    line-height: 2.4rem; /* 150% */
+
+    @include abstracts.screen("sm") {
+      font-size: 1.4rem;
+      line-height: 2rem; /* 157.143% */
+    }
+  }
+}

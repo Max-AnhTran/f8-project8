@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 html.dark {
     --primary-font-color: #fff;
     --icon-color: brightness(0) saturate(100%) invert(100%) sepia(28%)
@@ -5,18 +7,39 @@ html.dark {
 
     --body-bg-color: #292e39;
     --header-bg-color: #171c28;
-    --header-shadow: rgba(0, 0, 0, 0.20);
-    --nav-bg-color: #fff;
-    --nav-shadow: rgba(23, 28, 40, 0.40);    
-    --top-action-group-bg-color: #292E39;
+    --header-shadow: rgba(0, 0, 0, 0.2);
+    --nav-bg-color: #292e39;
+    --nav-shadow: rgba(23, 28, 40, 0.4);
+    --nav-font-color: #b9babe;
+    --nav-icon-color: brightness(0) saturate(100%) invert(81%) sepia(5%)
+        saturate(155%) hue-rotate(191deg) brightness(92%) contrast(91%);
+    --top-action-group-bg-color: #292e39;
     --top-action-group-shadow: rgba(0, 0, 0, 0.08);
     --top-action-group-separator: #ededf6;
 
     // Dropdown
     --dropdown-bg-color: #313744;
-    --dropdown-shadow: rgba(23, 28, 40, 0.40);
-    --dropdown-arrow-color: brightness(0) saturate(100%) invert(21%) sepia(4%) saturate(2957%) hue-rotate(183deg) brightness(90%) contrast(93%);
-    --top-menu-main-border-color: #171C28;
-    --menu-column-icon-color: brightness(0) saturate(100%) invert(90%) sepia(8%) saturate(772%) hue-rotate(203deg) brightness(109%) contrast(95%);
+    --dropdown-shadow: rgba(23, 28, 40, 0.4);
+    --dropdown-arrow-color: brightness(0) saturate(100%) invert(21%) sepia(4%)
+        saturate(2957%) hue-rotate(183deg) brightness(90%) contrast(93%);
+    --top-menu-main-border-color: #171c28;
+    --menu-column-icon-color: brightness(0) saturate(100%) invert(90%) sepia(8%)
+        saturate(772%) hue-rotate(203deg) brightness(109%) contrast(95%);
 
+    // Browse Category
+    --cate-item-bg-color: #171c28;
+    --cate-item-thumb-bg-color: #292e39;
+    --cate-item-heading-color: #fff;
+
+    // Filter btn
+    --filter-btn-bg-color: #171c28;
+    --filter-btn-font-color: #fff;
+
+    // Product item
+    --product-item-bg-color: #171C28;
+    --product-item-shadow: rgba(0, 0, 0, 0.20);
+
+        // Like btn
+        --like-btn-bg-color: #292E39;
+        --like-btn-shadow: rgba(124, 124, 124, 0.20);
 }
