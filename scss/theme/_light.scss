@@ -7,6 +7,7 @@ html {
     --body-bg-color: #f6f6f6;
     --header-bg-color: #eee;
     --header-shadow: rgba(237, 237, 246, 0.2);
+    --footer-secondary-font-color: #1a162e;
     --nav-bg-color: #fff;
     --nav-shadow: rgba(200, 200, 200, 0.40);    
     --top-action-group-bg-color: #fff;
@@ -34,6 +35,14 @@ html {
     // Like btn
     --like-btn-bg-color: #fff;
     --like-btn-shadow: rgba(124, 124, 124, 0.20);
+
+    // Btns
+    --btn-outline-border-color: #D2D1D6;
+
+    // Filter form
+    --filter-form-bg-color: #fff;
+    --filter-form-shadow: rgba(200, 200, 200, 0.4);
+    --filter-tag-bg-color: #F8F8FB;
 
     @include abstracts.screen('lg') {
         --header-bg-color: #FFF;

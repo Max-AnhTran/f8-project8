@@ -29,6 +29,7 @@
     border-radius: 50%;
     background: var(--like-btn-bg-color);
     box-shadow: 0px 20px 60px var(--like-btn-shadow);
+    cursor: pointer;
 
     &__icon--liked {
         translate: 0px 4.5px;
@@ -40,5 +41,45 @@
 
     &--liked &__icon {
         display: none;
+    }
+}
+
+// Buttons
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        opacity: .9;
+    }
+
+    &--text {
+        padding: 6px 12px;
+        background: var(--filter-tag-bg-color);
+        border-radius: 6px;
+        color: #9e9da8;
+    }
+
+    &--primary {
+        border-radius: 6px;
+        background: #ffb700;
+        color: #1A162E;
+    }
+
+    &--rounded {
+        border-radius: 99px;
+        background: #ffb700;
+        color: #1A162E;
+    }
+
+    &--outline {
+        border-radius: 10px;
+        border: 1px solid var(--btn-outline-border-color);
     }
 }

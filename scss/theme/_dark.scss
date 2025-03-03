@@ -8,6 +8,7 @@ html.dark {
     --body-bg-color: #292e39;
     --header-bg-color: #171c28;
     --header-shadow: rgba(0, 0, 0, 0.2);
+    --footer-secondary-font-color: #9e9da6;
     --nav-bg-color: #292e39;
     --nav-shadow: rgba(23, 28, 40, 0.4);
     --nav-font-color: #b9babe;
@@ -36,10 +37,20 @@ html.dark {
     --filter-btn-font-color: #fff;
 
     // Product item
-    --product-item-bg-color: #171C28;
-    --product-item-shadow: rgba(0, 0, 0, 0.20);
+    --product-item-bg-color: #171c28;
+    --product-item-shadow: rgba(0, 0, 0, 0.2);
 
-        // Like btn
-        --like-btn-bg-color: #292E39;
-        --like-btn-shadow: rgba(124, 124, 124, 0.20);
+    // Filter form
+    --filter-form-bg-color: #fff;
+    --filter-form-bg-color: #292E39;
+    --filter-form-shadow: rgba(0, 0, 0, 0.40);
+    --filter-tag-bg-color: #171c28;
+    --filter-form-icon: brightness(0) saturate(100%) invert(14%) sepia(21%) saturate(669%) hue-rotate(183deg) brightness(88%) contrast(86%);
+
+    // Like btn
+    --like-btn-bg-color: #292e39;
+    --like-btn-shadow: rgba(124, 124, 124, 0.2);
+    
+    // Btns
+    --btn-outline-border-color: #B9BABE;
 }

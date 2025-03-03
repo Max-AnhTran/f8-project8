@@ -1,0 +1,283 @@
+@use "../abstracts";
+
+.filter {
+    position: relative;
+    z-index: 1;
+
+    &-wrapper {
+        padding: 30px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: var(--filter-form-bg-color);
+        border-radius: 20px;
+        filter: drop-shadow(0px 40px 90px var(--filter-form-shadow));
+        transition: 0.2s;
+
+        @include abstracts.screen("xl") {
+            padding: 30px 0;
+        }
+
+        @include abstracts.screen("sm") {
+            width: 85vw;
+            height: auto;
+        }
+
+        &.hide {
+            opacity: 0;
+            visibility: hidden;
+            scale: 0.1;
+            translate: 41% -45%;
+        }
+    }
+
+    &__arrow {
+        width: 48px;
+        position: absolute;
+        top: -18px;
+        right: 24px;
+
+        filter: var(--filter-form-icon);
+    }
+
+    &__heading {
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 3.2rem; /* 145.455% */
+
+        @include abstracts.screen("xl") {
+            padding: 0 30px;
+        }
+    }
+
+    &__form {
+        margin-top: 30px;
+
+        &-row {
+            display: flex;
+            gap: 30px;
+
+            @include abstracts.screen("xl") {
+                padding: 0 30px;
+                flex-direction: column;
+                height: calc(100vh - 350px);
+                overflow-y: auto;
+            }
+        }
+
+        &-separator {
+            display: block;
+            width: 1px;
+            background: #eee;
+
+            @include abstracts.screen("xl") {
+                height: 1px;
+                width: initial;
+            }
+        }
+
+        &-label {
+            display: block;
+            font-size: 2.2rem;
+            font-weight: 500;
+            line-height: 3.2rem; /* 145.455% */
+
+            &--small {
+                margin-bottom: 10px;
+                font-size: 1.4rem;
+                font-weight: 500;
+                line-height: 2rem; /* 142.857% */
+            }
+        }
+
+        &-group {
+            margin-top: 20px;
+
+            &--horizontal {
+                display: flex;
+                gap: 30px;
+            }
+        }
+
+        &-slider {
+            border-top: 10px solid var(--filter-form-bg-color);
+            border-bottom: 10px solid var(--filter-form-bg-color);
+            position: relative;
+            width: 100%;
+            height: 22px;
+            background: #d2d1d6;
+
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 22px;
+                height: 22px;
+                background-color: var(--filter-form-bg-color);
+                border-radius: 50%;
+                border: 6px solid #ffb700;
+            }
+
+            &::before {
+                left: var(--min-value);
+            }
+
+            &::after {
+                left: var(--max-value);
+            }
+        }
+
+        &-input,
+        &-select {
+            border-radius: 6px;
+            border: 1px solid #d2d1d6;
+        }
+
+        &-input {
+            width: 121px;
+            padding: 5px 12px;
+
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 2rem; /* 142.857% */
+
+            @include abstracts.screen("sm") {
+                width: 100%;
+                font-size: 1.5rem;
+                line-height: 2.2rem; /* 142.857% */
+            }
+
+            &--big {
+                width: 334px;
+                padding: 10px 56px 10px 16px;
+
+                font-size: 1.5rem;
+                line-height: 2.2rem;
+
+                @include abstracts.screen("sm") {
+                    width: 100%;
+                    font-size: 1.6rem;
+                }
+
+                &::placeholder {
+                    color: #9e9da8;
+                    font-weight: 400;
+
+                    @include abstracts.screen("sm") {
+                        font-size: 1.5rem;
+                        line-height: 2.2rem; /* 142.857% */
+                    }
+                }
+            }
+        }
+
+        &-select {
+            width: 272px;
+            display: flex;
+            padding: 4px 0px;
+
+            @include abstracts.screen("sm") {
+                width: 100%;
+            }
+
+            &-wrapper {
+                height: 35px;
+                padding: 0 14px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 1.4rem;
+                font-weight: 500;
+                line-height: 2rem; /* 142.857% */
+                cursor: pointer;
+
+                @include abstracts.screen("sm") {
+                    font-size: 1.5rem;
+                    line-height: 2.2rem; /* 142.857% */
+                }
+
+                &--left {
+                    width: 60%;
+                }
+
+                &--right {
+                    flex-grow: 1;
+                }
+            }
+
+            &-separator {
+                width: 1px;
+                height: 35px;
+                background: #d2d1d6;
+            }
+        }
+
+        &-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 20px;
+
+            @include abstracts.screen("sm") {
+                gap: 10px;
+            }
+        }
+
+        &-tag {
+            font-size: 1.4rem;
+            line-height: 2rem; /* 142.857% */
+            transition: color 0.2s;
+
+            @include abstracts.screen("sm") {
+                font-weight: 400;
+            }
+
+            &:hover {
+                color: var(--primary-font-color);
+            }
+        }
+
+        &-search {
+            position: relative;
+
+            &-icon {
+                padding: 5px 15px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 16px;
+                cursor: pointer;
+            }
+        }
+
+        &-btn {
+            &s {
+                margin-top: 20px;
+                display: flex;
+                justify-content: flex-end;
+                gap: 10px;
+
+                @include abstracts.screen("xl") {
+                    padding: 0 30px;
+                }
+            }
+
+            &--cancel {
+                padding: 5px 10px;
+                cursor: pointer;
+
+                color: #9e9da8;
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 2.2rem; /* 146.667% */
+            }
+
+            &--show {
+                padding: 9px 10px;
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
+        }
+    }
+}

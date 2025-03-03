@@ -2,7 +2,7 @@
 
 .home {
   &__container {
-    margin-top: 40px;
+    margin: 40px 0;
 
     @include abstracts.screen("md") {
       margin-top: 30px;
@@ -10,7 +10,6 @@
   }
 
   &__heading {
-    color: var(--primary-font-color);
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 3.4rem; /* 141.667% */
