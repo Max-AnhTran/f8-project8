@@ -42,15 +42,30 @@ html.dark {
 
     // Filter form
     --filter-form-bg-color: #fff;
-    --filter-form-bg-color: #292E39;
-    --filter-form-shadow: rgba(0, 0, 0, 0.40);
+    --filter-form-bg-color: #292e39;
+    --filter-form-shadow: rgba(0, 0, 0, 0.4);
     --filter-tag-bg-color: #171c28;
-    --filter-form-icon: brightness(0) saturate(100%) invert(14%) sepia(21%) saturate(669%) hue-rotate(183deg) brightness(88%) contrast(86%);
+    --filter-form-icon: brightness(0) saturate(100%) invert(14%) sepia(21%)
+        saturate(669%) hue-rotate(183deg) brightness(88%) contrast(86%);
 
     // Like btn
     --like-btn-bg-color: #292e39;
     --like-btn-shadow: rgba(124, 124, 124, 0.2);
-    
+
     // Btns
-    --btn-outline-border-color: #B9BABE;
+    --btn-outline-border-color: #b9babe;
+
+    // Auth
+    --auth-primary-font-color: #b9babe;
+    --auth-bg-color1: #292e39;
+    --auth-bg-color2: #171c28;
+    --auth-bg-color3: #171c28;
+    --auth-form-color: #b9babe;
+    --auth-form-checkbox-color: #b9babe;
+    --auth-icon-filter: brightness(0) saturate(100%) invert(92%) sepia(6%)
+        saturate(129%) hue-rotate(191deg) brightness(82%) contrast(85%);
+
+    // Messages
+    --success-bg-color: #37795595;
+    --success-border-color: #08a955;
 }

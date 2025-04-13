@@ -44,6 +44,18 @@ html {
     --filter-form-shadow: rgba(200, 200, 200, 0.4);
     --filter-tag-bg-color: #F8F8FB;
 
+    // Auth
+    --auth-primary-font-color: var(--primary-font-color);
+    --auth-bg-color1: #fff;
+    --auth-bg-color2: #FAFAFD;
+    --auth-bg-color3: #fff;
+    --auth-form-color: #D2D1D6;
+    --auth-form-checkbox-color: #9E9DA8;
+
+    // Messages
+    --success-bg-color: #b6eacd;
+    --success-border-color: #08a955;
+
     @include abstracts.screen('lg') {
         --header-bg-color: #FFF;
     }

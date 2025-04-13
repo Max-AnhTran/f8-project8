@@ -1,0 +1,19 @@
+.message {
+    width: 100%;
+    padding: 13px 0 15px;
+    border-radius: 10px;
+
+    color: var(--auth-primary-font-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem; /* 150% */
+
+    &--info {
+        background-color: var(--info-bg-color, #e7f3ff);
+        border: 1.5px solid var(--info-border-color, #b3d4fc);
+    }
+    &--success {
+        background-color: var(--success-bg-color);
+        border: 1.5px solid var(--success-border-color);
+    }
+}
