@@ -1,0 +1,30 @@
+@use "../abstracts";
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 25px;
+    padding: 20px;
+    background-color: var(--breadcrumb-bg-color);
+    border-radius: 10px;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: var(--breadcrumb-font-color);
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2.4rem;
+
+        @include abstracts.screen("md") {
+            font-size: 1.4rem;
+            line-height: 2rem; /* 142.857% */
+        }
+
+        &--active {
+            color: var(--breadcrumb-active-font-color);
+        }
+    }
+}

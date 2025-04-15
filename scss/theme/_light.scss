@@ -56,6 +56,16 @@ html {
     --success-bg-color: #b6eacd;
     --success-border-color: #08a955;
 
+    //Product-detail
+    --product-detail-bg-color: #fff;
+    --product-preview-thumb-border-color: #D2D1D6;
+    --product-info-bg-color: #F6F6F6;
+
+    //Breadcrumb
+    --breadcrumb-bg-color: #F6F6F6;
+    --breadcrumb-font-color: #9E9DA8;
+    --breadcrumb-active-font-color: #1A162E;
+
     @include abstracts.screen('lg') {
         --header-bg-color: #FFF;
     }
